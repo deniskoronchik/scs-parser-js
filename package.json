@@ -1,0 +1,24 @@
+{
+  "name": "scs-parser-js",
+  "version": "0.1.0",
+  "description": "Parse SCs-text with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "pegjs --extra-options-file .pegjs -o scsSyntax.js scsSyntax.pegjs && webpack --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deniskoronchik/scs-parser-js.git"
+  },
+  "author": "Denis Koronchik <denis.koronchik@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deniskoronchik/scs-parser-js/issues"
+  },
+  "homepage": "https://github.com/deniskoronchik/scs-parser-js#readme",
+  "devDependencies": {
+    "pegjs": "^0.10.0",
+    "webpack": "^2.6.1"
+  }
+}
